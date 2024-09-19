@@ -25,9 +25,24 @@ To demonstrate the identification, exploitation, and mitigation of security vuln
 - open terminal in kali linux
 - type msfconsole to get into metasploit framework
 - ![image](https://github.com/user-attachments/assets/83730743-349e-48a8-8fb8-e4c6cb5e10b8)
-![image](https://github.com/user-attachments/assets/83730743-349e-48a8-8fb8-e4c6cb5e10b8)
-![image](https://github.com/user-attachments/assets/83730743-349e-48a8-8fb8-e4c6cb5e10b8)
+- know the ip address of your network and scan the network using nmap
+- ![image](https://github.com/user-attachments/assets/2f3e474a-ceb0-4f34-95ff-2a04ed718571)
+- now run a nmap on the ip 192.168.160.130 as it seems to have many open ports
+- ![image](https://github.com/user-attachments/assets/cd94d0af-93ce-4cc8-9fbc-e162884cd343)
+- ![image](https://github.com/user-attachments/assets/b3da5c94-7474-4a39-9914-8b775432e514)
+- ![image](https://github.com/user-attachments/assets/8b2da781-f191-4afa-b24e-bb6d4feb14b4)
+- there are many open ports and lets go with data base postgreSQL which is on 5432/tcp port because there are many known vulnerabilities
+- metasploit allows you to search vulnerability types in the auxilary
+- ![image](https://github.com/user-attachments/assets/74ea0850-aad1-4cd2-8a08-d7e200724c09)
+- here let us use auxiliary/scanner/postgres/postgres_login and can bruteforce login
+- ![image](https://github.com/user-attachments/assets/0e3fc9a3-ab2d-4e7a-99a3-4a8514321528)
+- u need to set RHosts ipaddress of target machine and can type run
+- ![image](https://github.com/user-attachments/assets/23fe1cae-da2f-4851-9e36-bf5bd3bf429d)
+- now we are certain that u can login using postgres:postgres as username and password
 
-![Screenshot 2024-09-19 202205](https://github.com/user-attachments/assets/1b04b3f9-5a74-4c1b-a78b-e145ffef6261)
-![Screenshot 2024-09-19 202205](https://github.com/user-attachments/assets/1b04b3f9-5a74-4c1b-a78b-e145ffef6261)
-![Screenshot 2024-09-19 202205](https://github.com/user-attachments/assets/1b04b3f9-5a74-4c1b-a78b-e145ffef6261)
+
+
+
+
+
+
